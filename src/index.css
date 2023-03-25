@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-Light'),
+    url('./fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: Montserrat;
+  color: #ab8e10;
+  background-color: #17241c;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  text-shadow: none;
+}

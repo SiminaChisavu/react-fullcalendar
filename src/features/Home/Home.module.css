@@ -1,0 +1,19 @@
+.homePg {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  background-image: url('./media/wallpaper.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+p {
+  padding: 5rem 5rem 8.5rem;
+  color: #17241c;
+  text-shadow: -0.25em 0 0.5em #b68818, 0.25em 0 0.5em #b68818,
+    0 -0.125em 0.25em #b68818, 0 0.125em 0.25em #b68818;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: 3s alternate;
+}

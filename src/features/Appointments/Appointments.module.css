@@ -1,0 +1,348 @@
+/* Agenda */
+
+:root {
+  --fc-page-bg-color: #17241c;
+  --fc-border-color: #ab8e10;
+  --fc-button-text-color: #17241c;
+  --fc-button-bg-color: #ab8e10;
+  --fc-button-border-color: #17241c;
+  --fc-button-hover-bg-color: #121c16;
+  --fc-button-hover-border-color: #ab8e10;
+  --fc-button-hover-text-color: #ab8e10;
+  --fc-button-active-bg-color: #121c16;
+  --fc-button-active-border-color: #ab8e10;
+  --fc-event-border-color: #17241c;
+}
+
+.agenda {
+  position: relative;
+  min-height: 100%;
+  z-index: 999;
+  overflow: auto;
+}
+
+.agenda .fc button:hover,
+.agenda .fc button:hover span {
+  color: #ab8e10 !important;
+}
+
+.agenda .fc button:focus {
+  box-shadow: none !important;
+}
+
+.agenda .fc button span {
+  color: #17241c;
+}
+
+.agenda .fc table th,
+.agenda .fc table tr {
+  border: 1px solid #ab8e10;
+}
+
+.eventContent,
+.eventDayGrid {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.eventContent {
+  flex-direction: column;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.eventDayGrid {
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+.eventDetails,
+.eventContent {
+  overflow: hidden;
+}
+
+.iconGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.editIcon,
+.dltIcon {
+  color: #17241c;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #17241c;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ab8e10;
+  border-radius: 0.5rem;
+}
+
+/* Add Appointment&Edit Appointment (including delete appointment)*/
+
+.manageAppointments {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./media/background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.manageAppointments h1 {
+  padding-bottom: 1rem;
+  padding-left: 0.6rem;
+  font-size: 1rem;
+}
+
+.manageAppointments label,
+.manageAppointments button {
+  font-weight: bold;
+}
+
+.formContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-height: 82%;
+  margin-right: 2rem;
+  background-color: #17241c;
+  background-repeat: no-repeat;
+}
+
+.addBtn {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 1.55rem;
+}
+
+.formContent {
+  height: 100%;
+  margin-top: 0.5rem;
+  padding-top: 1.3rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.forDatetime,
+.forSelect {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper label {
+  position: absolute;
+  top: 0.2ex;
+  z-index: 1;
+  left: 1.5rem;
+  background-color: #17241c;
+  padding: 0 0.1rem;
+}
+
+.wrapper label:nth-child(5) {
+  left: 1.9rem;
+  padding: 0 0.1rem;
+}
+
+.wrapper input,
+.wrapper select {
+  position: relative;
+  margin: 10px;
+  padding-left: 0.3rem;
+  border-radius: 0.2rem;
+  line-height: 2rem;
+}
+
+.wrapper select {
+  height: 2.1rem;
+}
+
+.wrapper select[name='category'] {
+  -webkit-appearance: none;
+  pointer-events: none;
+}
+
+.formContent input,
+.formContent input:active,
+.formContent select {
+  width: 13.3rem;
+  color: #ab8e10;
+  background-color: #17241c;
+  border: 1px solid #ab8e10;
+  outline: none;
+  font-family: Montserrat;
+}
+
+.datetime table {
+  border-collapse: collapse;
+}
+
+.datetime table th {
+  border-bottom-color: #ab8e10;
+}
+
+.datetime tfoot tr:first-child {
+  border-top: 1px solid #ab8e10;
+}
+
+.datetime input {
+  font-family: Montserrat;
+}
+
+.datetime > div {
+  border: 1px solid #ab8e10;
+  border-radius: 0.2rem;
+  background: #17241c;
+}
+
+.manageAppointments .formContent .datetime td:hover {
+  background: #ab8e10;
+  color: #17241c;
+}
+
+.manageAppointments .formContent .datetime td::before {
+  border-bottom: 7px solid #ab8e10;
+}
+
+.formContent .datetime thead tr:first-of-type th:hover,
+.manageAppointments .formContent .datetime tfoot :hover,
+.manageAppointments .formContent .datetime span:hover {
+  background: #17241c;
+  color: #ab8e10;
+}
+
+.selectComponent {
+  width: 13.3rem;
+  margin: 10px;
+  line-height: 2rem;
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+
+.selectComponent svg {
+  margin-right: 0.2rem;
+}
+
+.services {
+  padding-left: 0.6rem;
+}
+
+.services span {
+  padding-left: 0.2rem;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 0.65rem !important;
+  height: 0.65rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #ab8e10;
+  border-radius: 0.1rem;
+  background-clip: content-box;
+  pointer-events: auto;
+}
+
+input[type='checkbox']:checked {
+  background-color: #ab8e10;
+}
+
+.cosmetic label,
+.hairdressing label,
+.checkboxesPckge2 label {
+  pointer-events: none;
+}
+
+.checkboxesPckge1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.cosmetic,
+.hairdressing,
+.checkboxesPckge2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.cosmetic {
+  padding-top: 1rem;
+}
+
+.formContent button,
+.manageAppointments button,
+.modalContent button {
+  padding: 5px 16px;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+  background-color: #ab8e10;
+  color: #17241c;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.dltModal button:hover,
+.manageAppointments button:hover {
+  background-color: #121c16;
+  color: #ab8e10;
+  border: 1px solid #ab8e10;
+}
+
+/* Form validation */
+
+.invalid {
+  color: #ff0000;
+}
+
+/* Delete modal */
+
+.dltModal {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0.2px;
+  left: 48%;
+  transform: translate(-48%);
+  background-color: rgba(79, 79, 79, 0.5);
+}
+
+.modalContent {
+  margin: 21rem 35rem;
+  padding: 1rem 4rem;
+  border-radius: 0.2rem;
+  background-color: #17241c;
+}
+
+.modalBtns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}

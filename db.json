@@ -1,0 +1,72 @@
+{
+  "appointments": [
+    {
+      "title": "Ioana",
+      "start": "2023-03-27T04:00:00.000Z",
+      "end": "2023-03-27T05:00:00.000Z",
+      "caregiver": "Ioana",
+      "category": "Cosmetic",
+      "allDay": false,
+      "services": [
+        "Pensat întreținere",
+        "Tratament curățare",
+        "Masaj facial"
+      ],
+      "id": 1
+    },
+    {
+      "title": "Ana",
+      "start": "2023-03-27T04:00:00.000Z",
+      "end": "2023-03-27T05:00:00.000Z",
+      "caregiver": "Gabi",
+      "category": "Hairdressing",
+      "allDay": false,
+      "services": [
+        "Styling",
+        "Balayage mediu"
+      ],
+      "id": 2
+    },
+    {
+      "title": "Ana",
+      "start": "2023-03-30T04:30:00.000Z",
+      "end": "2023-03-30T05:30:00.000Z",
+      "caregiver": "Gabi",
+      "category": "Hairdressing",
+      "allDay": false,
+      "services": [
+        "Vopsit scurt",
+        "Fiolă tratament",
+        "Keratină"
+      ],
+      "id": 4
+    },
+    {
+      "title": "Ana",
+      "start": "2023-03-29T04:15:00.000Z",
+      "end": "2023-03-29T05:15:00.000Z",
+      "caregiver": "Ioana",
+      "category": "Cosmetic",
+      "allDay": false,
+      "services": [
+        "Tratament curățare",
+        "Masaj facial",
+        "Tratament hidratare",
+        "Vopsit sprâncene"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Andreea",
+      "start": "2023-04-01T05:00:00.000Z",
+      "end": "2023-04-01T05:30:00.000Z",
+      "caregiver": "Ioana",
+      "category": "Cosmetic",
+      "allDay": false,
+      "services": [
+        "Masaj facial"
+      ],
+      "id": 6
+    }
+  ]
+}

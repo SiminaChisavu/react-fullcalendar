@@ -1,0 +1,6 @@
+.pageContainer {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  width: 100vw;
+  height: 100vh;
+}
